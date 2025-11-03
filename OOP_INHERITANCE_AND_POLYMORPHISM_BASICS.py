@@ -72,3 +72,19 @@ for agent in agents:
 
     
 print(Agent.get_total_agents())
+
+# exe7
+class AgencyDirector:
+    counter=None
+    def __init__(self,nema):
+        if AgencyDirector.counter ==None:
+            self.nema=nema
+            AgencyDirector.counter=""
+        else:
+            self.nema=("this is singleton")
+
+
+a=AgencyDirector("a")
+b=AgencyDirector("b")
+print(a.nema)
+print(b.nema)
